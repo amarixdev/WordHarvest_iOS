@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct WordHarvestApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for:[SavedWord.self, Book.self])
+              
         }
     }
 }
